@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>倒计时插件</title>
+    <link rel="stylesheet" href="../css/device.css" />
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <style type="text/css">
+    	html,body{
+    		background: #f7f7f7;
+    	}
+    	.header-title-2{
+    		background: #50c1e9;
+    	}
+    	canvas{
+    		position: absolute;
+    		background: #50c1e9;
+    		top: 0px;
+			left: 50%;
+			margin-left: -150px;
+			z-index: 1;
+			}
+		#indicator{
+			display: none;
+			position: absolute;		
+			z-index: 99;
+			width:30px;
+			height: 30px;
+		}
+    </style>
+</head>
+<body>
+	<div class="clock-count-down">
+		<canvas id="canvas" width="300" height="300"></canvas> 
+		<img src="../images/indicator.png" id="indicator" alt=""/>
+		<div class="count-down-time">00:00:00</div>
+	</div>
+	
+	<!--倒计时时钟-->
+	<script type="text/javascript" src="../js/count-down.js"></script>
+</body>
+</html>     
